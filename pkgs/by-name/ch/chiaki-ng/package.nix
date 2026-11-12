@@ -6,7 +6,7 @@
   pkg-config,
   protobuf,
   python3,
-  ffmpeg_8,
+  ffmpeg,
   libopus,
   SDL2,
   libevdev,
@@ -53,7 +53,7 @@ stdenv.mkDerivation (finalAttrs: {
   ];
 
   buildInputs = [
-    ffmpeg_8
+    ffmpeg
     libopus
     kdePackages.qtbase
     kdePackages.qtmultimedia
