@@ -89,6 +89,7 @@
   libffi,
   libepoxy,
   libevdev,
+  vulkan-headers,
   # postPatch:
   glibc, # gconv + locale
   # postFixup:
@@ -574,6 +575,7 @@ let
       re2
       ffmpeg
     ]
+    ++ lib.optional (!isElectron) vulkan-headers
     ++ lib.optionals withSystemXslt [
       libxslt
       libxml2
